@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #EFE7E8;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+#ourdDesignProcess {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.ourDesignProcessTitleText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.ourDesignProcessTitleText h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Disclaimer', sans-serif;
+    font-size: 400px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.description h3 {
+    color: #062758;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    /* 190.909% */
+    letter-spacing: 2.2px;
+}
+
+.description p {
+    color: #062758;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    /* 218.75% */
+    letter-spacing: 1.6px;
+    max-width: 940px;
+}
+
+
+/* our design process list design */
+/* our design process list design */
+
+
+.serviceThumbnailListContent {
+    position: relative;
+    width: 100%;
+    height: 820px;
+    align-items: center;
+}
+
+.hoverImg01,
+.hoverImg02,
+.hoverImg03 {
+    width: 100%;
+    height: 820px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+}
+
+.serviceThumbnailList {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    align-items: flex-end;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.thumbnailService01,
+.thumbnailService02,
+.thumbnailService03 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.wrapThumbnail01,
+.wrapThumbnail02,
+.wrapThumbnail03 {
+    width: 400px;
+    height: 640px;
+    border-radius: 200px;
+    position: relative;
+    transition: bottom 0.5s ease-in-out, opacity 0.5s ease;
+}
+
+.wrapThumbnail01 {
+    background: #fff;
+}
+
+.wrapThumbnail02 {
+    background: #E2D2D4;
+}
+
+.wrapThumbnail03 {
+    background: #fff;
+}
+
+.title01,
+.title02,
+.title03 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 11px;
+    align-items: center;
+    z-index: 3;
+    transition: gap 0.5s ease;
+}
+
+.number01,
+.number02,
+.number03 {
+    color: #062758;
+    text-align: center;
+    font-family: 'Disclaimer', sans-serif;
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    transition: color 0.5s ease, padding-top 0.5s ease;
+}
+
+.serviceName01,
+.serviceName02,
+.serviceName03 {
+    color: #062758;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 200% */
+    letter-spacing: 2px;
+}
+
+
+.wrapImgHoverTitle01,
+.wrapImgHoverTitle02,
+.wrapImgHoverTitle03 {
+    width: 390px;
+    height: 390px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    opacity: 1;
+    transition: top 0.5s ease-in-out, opacity 0.5s ease;
+    z-index: 1;
+}
+
+.imageContainer01,
+.imageContainer02,
+.imageContainer03 {
+    width: 390px;
+    height: 390px;
+    border-radius: 100%;
+    object-fit: cover;
+    z-index: 1;
+
+}
+
+.hoverOverlyColor01 {
+    width: 390px;
+    height: 390px;
+    border-radius: 100%;
+    background: #000;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+.hoverIcon01,
+.hoverIcon02,
+.hoverIcon03 {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.description01,
+.description02,
+.description03 {
+    color: #062758;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 186.667% */
+    letter-spacing: 1.5px;
+    max-width: 300px;
+    margin: auto;
+}
+
+
+
+/* our design process list hover design */
+/* our design process list hover design */
+
+
+/* Keyframes for smoother drop bounce effect */
+.thumbnailService01:hover .wrapImgHoverTitle01 {
+    top: 5px;
+    transition: top 0.5s ease-in-out;
+}
+
+@keyframes bounceDrop {
+    0% {
+        top: -50px;
+    }
+    25% {
+        top: 20px;
+    }
+    50% {
+        top: -15px;
+    }
+    100% {
+        top: 5px;
+    }
+}
+
+.thumbnailService01:hover .hoverOverlyColor01 {
+    opacity: 0.3;
+}
+
+.thumbnailService01:hover .number01 {
+    color: #fff;
+    padding-top: 90px;
+    z-index: 10;
+}
+
+.thumbnailService01:hover .title01 {
+    z-index: 11;
+    gap: 224px;
+}
+
+.thumbnailService01:hover .hoverIcon01 {
+    opacity: 1;
+}
+
+.thumbnailService01:hover ~ .thumbnailService02 .wrapImgHoverTitle02 {
+    display: none;
+}
+
+.thumbnailService01:hover ~ .thumbnailService02 .wrapThumbnail02{
+    height: 400px;
+    opacity: 0.5;
+    background: #000;
+}
+
+.thumbnailService01:hover ~ .thumbnailService02 .number02 {
+    color: #fff;
+    padding-top: 50px;
+}
+
+.thumbnailService01:hover ~ .thumbnailService02 .serviceName02 {
+    color: #fff;
+
+}
+
+.thumbnailService01:hover ~ .hover-img .hoverImg01{
+    opacity: 1;
+}
+
+
+
+.thumbnailService01:hover ~ .thumbnailService03 .wrapImgHoverTitle03 {
+    display: none;
+}
+
+.thumbnailService01:hover ~ .thumbnailService03 .wrapThumbnail03{
+    height: 400px;
+    opacity: 0.5;
+    background: #000;
+}
+
+.thumbnailService01:hover ~ .thumbnailService03 .number03 {
+    color: #fff;
+    padding-top: 50px;
+}
+
+.thumbnailService01:hover ~ .thumbnailService03 .serviceName03 {
+    color: #fff;
+
+}
+
