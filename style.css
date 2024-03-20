@@ -205,7 +205,9 @@ body {
 
 }
 
-.hoverOverlyColor01 {
+.hoverOverlyColor01,
+.hoverOverlyColor02,
+.hoverOverlyColor0 {
     width: 390px;
     height: 390px;
     border-radius: 100%;
@@ -252,7 +254,7 @@ body {
 /* our design process list hover design */
 
 
-/* Keyframes for smoother drop bounce effect */
+
 .thumbnailService01:hover .wrapImgHoverTitle01 {
     top: 5px;
     transition: top 0.5s ease-in-out;
@@ -334,6 +336,97 @@ body {
 }
 
 .thumbnailService01:hover ~ .thumbnailService03 .serviceName03 {
+    color: #fff;
+
+}
+
+
+
+/* 2nd card hover  */
+/* 2nd card hover  */
+
+
+.thumbnailService02:hover .wrapImgHoverTitle02 {
+    top: 5px;
+    transition: top 0.5s ease-in-out;
+}
+
+@keyframes bounceDrop {
+    0% {
+        top: -50px;
+    }
+    25% {
+        top: 20px;
+    }
+    50% {
+        top: -15px;
+    }
+    100% {
+        top: 5px;
+    }
+}
+
+.thumbnailService02:hover .hoverOverlyColor02 {
+    opacity: 0.3;
+}
+
+.thumbnailService02:hover .number02 {
+    color: #fff;
+    padding-top: 90px;
+    z-index: 10;
+}
+
+.thumbnailService02:hover .title02 {
+    z-index: 11;
+    gap: 224px;
+}
+
+.thumbnailService02:hover .hoverIcon02 {
+    opacity: 1;
+}
+
+.thumbnailService02:hover ~ .thumbnailService01 .wrapImgHoverTitle01 {
+    display: none;
+}
+
+.thumbnailService02:hover ~ .thumbnailService01 .wrapThumbnail01{
+    height: 400px;
+    opacity: 0.5;
+    background: #000;
+}
+
+.thumbnailService02:hover ~ .thumbnailService01 .number01 {
+    color: #fff;
+    padding-top: 50px;
+}
+
+.thumbnailService02:hover ~ .thumbnailService01 .serviceName01 {
+    color: #fff;
+
+}
+
+.thumbnailService02:hover ~ .hover-img .hoverImg02{
+    opacity: 1;
+}
+
+
+
+.thumbnailService02:hover ~ .thumbnailService03 .wrapImgHoverTitle03 {
+    display: none;
+}
+
+.thumbnailService02:hover ~ .thumbnailService03 .wrapThumbnail03{
+    height: 400px;
+    opacity: 0.5;
+    background: #000;
+}
+
+.thumbnailService02:hover ~ .thumbnailService03 .number03 {
+    color: #fff;
+    padding-top: 50px;
+}
+
+.thumbnailService0:hover ~ .thumbnailService03 .serviceName03 {
     color: #fff;
 
 }
